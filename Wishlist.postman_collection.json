@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "f27d17d6-e8d1-4746-8675-0b415f0bda74",
+		"name": "Wishlist",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Wish",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userId\": \"5d80d4fc7046ed4454ae8b93\",\n\t\"name\": \"Testing fdhd\",\n\t\"description\": \"Test Wish 1564\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44331/api/wish/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44331",
+					"path": [
+						"api",
+						"wish",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Wish",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44331/api/wish/5d80f1c8bd5e8918c0895b4c",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44331",
+					"path": [
+						"api",
+						"wish",
+						"5d80f1c8bd5e8918c0895b4c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Wish",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44331/api/wish",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44331",
+					"path": [
+						"api",
+						"wish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Wish",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"5d80f44ba2886050f89ab30c\",\n\t\"userId\": \"testuser\",\n\t\"name\": \"Testing Update\",\n\t\"description\": \"Test Wish Uupdate 1564\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44331/api/wish/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44331",
+					"path": [
+						"api",
+						"wish",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Wish By User",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44331/api/wish/5d80d4fc7046ed4454ae8b93",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44331",
+					"path": [
+						"api",
+						"wish",
+						"5d80d4fc7046ed4454ae8b93"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
